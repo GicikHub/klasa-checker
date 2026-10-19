@@ -54,7 +54,6 @@ Pliki wynikowe są tworzone lub nadpisywane przez program.
 git clone ADRES_TWOJEGO_REPOZYTORIUM
 cd NAZWA_REPOZYTORIUM
 
-
 Zastąp powyższe wartości adresem i nazwą swojego repozytorium.
 
 2. Przygotuj pliki wejściowe
