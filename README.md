@@ -1,22 +1,31 @@
 File Comparison – C++
-Opis projektu
+📌 Opis projektu
 
-Program napisany w języku C++, który porównuje zawartość dwóch plików tekstowych. Odczytuje dane linia po linii, a następnie rozdziela je na trzy grupy: elementy występujące tylko w pierwszym pliku, elementy występujące tylko w drugim pliku oraz elementy wspólne dla obu plików.
+File Comparison to program napisany w języku C++, który porównuje zawartość dwóch plików tekstowych. Odczytuje dane linia po linii, a następnie dzieli je na trzy grupy:
+
+Elementy występujące tylko w pierwszym pliku.
+Elementy występujące tylko w drugim pliku.
+Elementy wspólne dla obu plików.
 
 Wyniki porównania zapisywane są do trzech osobnych plików tekstowych.
 
-Funkcjonalności
-Wczytywanie danych z dwóch plików tekstowych.
-Porównywanie zawartości plików.
-Wyszukiwanie elementów występujących tylko w pierwszym pliku.
-Wyszukiwanie elementów występujących tylko w drugim pliku.
-Wyszukiwanie unikalnych elementów wspólnych dla obu plików.
-Zapisywanie wyników do osobnych plików tekstowych.
-Informowanie użytkownika o problemie z otwarciem pliku wejściowego.
-Technologie
+✨ Funkcjonalności
+📂 Wczytywanie danych z dwóch plików tekstowych.
+🔍 Porównywanie zawartości plików.
+📄 Wyszukiwanie elementów występujących tylko w pierwszym pliku.
+📄 Wyszukiwanie elementów występujących tylko w drugim pliku.
+🔗 Wyszukiwanie unikalnych elementów wspólnych dla obu plików.
+💾 Zapisywanie wyników do osobnych plików tekstowych.
+⚠️ Informowanie użytkownika o problemach z otwarciem pliku wejściowego.
+🛠️ Technologie
 Język: C++
-Biblioteki standardowe: iostream, fstream, string, vector, algorithm
-Struktura projektu
+Biblioteki standardowe:
+iostream
+fstream
+string
+vector
+algorithm
+📁 Struktura projektu
 .
 ├── main.cpp
 ├── plik1.txt
@@ -27,9 +36,20 @@ Struktura projektu
 └── README.md
 
 
-Pliki plik1.txt i plik2.txt są plikami wejściowymi. Trzy pozostałe pliki wynikowe są tworzone przez program.
+Pliki wejściowe:
 
-Jak uruchomić program?
+plik1.txt – pierwszy plik tekstowy.
+plik2.txt – drugi plik tekstowy.
+
+Pliki wynikowe:
+
+pierwszy.txt – elementy występujące tylko w pierwszym pliku.
+drugi.txt – elementy występujące tylko w drugim pliku.
+wspolny.txt – elementy wspólne dla obu plików.
+
+Pliki wynikowe są tworzone lub nadpisywane przez program.
+
+🚀 Jak uruchomić program?
 1. Sklonuj repozytorium
 git clone ADRES_TWOJEGO_REPOZYTORIUM
 cd NAZWA_REPOZYTORIUM
@@ -39,9 +59,9 @@ Zastąp powyższe wartości adresem i nazwą swojego repozytorium.
 
 2. Przygotuj pliki wejściowe
 
-Utwórz pliki plik1.txt i plik2.txt w katalogu roboczym programu i wpisz do nich przykładowe dane.
+Utwórz pliki plik1.txt i plik2.txt w katalogu roboczym programu.
 
-plik1.txt
+Przykładowa zawartość pliku plik1.txt:
 
 jabłko
 gruszka
@@ -49,7 +69,7 @@ banan
 kiwi
 
 
-plik2.txt
+Przykładowa zawartość pliku plik2.txt:
 
 gruszka
 banan
@@ -73,53 +93,56 @@ Windows:
 
 checker.exe
 
+Uwaga: Pliki wejściowe muszą znajdować się w katalogu roboczym, z którego uruchamiasz program.
+📊 Przykładowe wyniki
 
-Pliki wejściowe muszą znajdować się w katalogu roboczym, z którego uruchamiasz program.
+Dla podanych wcześniej danych program utworzy trzy pliki wynikowe.
 
-Przykładowe wyniki
+pierwszy.txt
 
-Dla podanych wcześniej danych program utworzy trzy pliki.
-
-pierwszy.txt – elementy występujące tylko w pierwszym pliku:
+Elementy występujące tylko w pierwszym pliku:
 
 jabłko
 kiwi
 
+drugi.txt
 
-drugi.txt – elementy występujące tylko w drugim pliku:
+Elementy występujące tylko w drugim pliku:
 
 pomarańcza
 śliwka
 
+wspolny.txt
 
-wspolny.txt – elementy występujące w obu plikach:
+Elementy występujące w obu plikach:
 
 gruszka
 banan
 
 
-Po zakończeniu programu w konsoli wyświetli się komunikat:
+Po zakończeniu działania programu w konsoli wyświetli się komunikat:
 
-Gotowe Utworzono 3 pliki wynikowe.
+Gotowe. Utworzono 3 pliki wynikowe.
 
-Jak działa program?
+⚙️ Jak działa program?
 
 Program wykorzystuje klasę Checker, która odpowiada za odczytywanie, porównywanie i zapisywanie danych.
 
-wczytajPlik() – odczytuje plik tekstowy i zapisuje jego linie w wektorze.
-tylkoW1() – zwraca elementy z pierwszego pliku, których nie ma w drugim.
-tylkoW2() – zwraca elementy z drugiego pliku, których nie ma w pierwszym.
-wspolne() – zwraca unikalne elementy obecne w obu plikach.
-zapiszPlik() – zapisuje otrzymane wyniki do pliku tekstowego.
-porownaj() – uruchamia cały proces porównywania.
-main() – tworzy obiekt klasy Checker i rozpoczyna działanie programu.
-Uwagi
+Metoda	Opis
+wczytajPlik()	Odczytuje plik tekstowy i zapisuje jego linie w wektorze.
+tylkoW1()	Zwraca elementy z pierwszego pliku, których nie ma w drugim.
+tylkoW2()	Zwraca elementy z drugiego pliku, których nie ma w pierwszym.
+wspolne()	Zwraca unikalne elementy obecne w obu plikach.
+zapiszPlik()	Zapisuje wyniki do pliku tekstowego.
+porownaj()	Uruchamia cały proces porównywania plików.
+main()	Tworzy obiekt klasy Checker i rozpoczyna działanie programu.
+📝 Uwagi
 Porównywanie odbywa się na podstawie całych linii tekstu.
-Wielkość liter ma znaczenie, np. Kot i kot są traktowane jako różne elementy.
+Wielkość liter ma znaczenie. Przykładowo Kot i kot są traktowane jako różne elementy.
 W przypadku elementów wspólnych duplikaty w wyniku są usuwane.
 W metodach tylkoW1() i tylkoW2() powtarzające się linie mogą pojawić się wielokrotnie, jeśli występują w odpowiednim pliku wejściowym.
 Program wymaga, aby pliki wejściowe były dostępne pod określonymi nazwami.
 Pliki wynikowe o tych samych nazwach są nadpisywane podczas kolejnego uruchomienia.
-Autor
+👨‍💻 Autor
 
 Projekt edukacyjny napisany w języku C++.
